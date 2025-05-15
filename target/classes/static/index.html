@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Upload Employee CSV</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="container">
+    <h1>📄 Upload Employee CSV</h1>
+
+    <label class="file-label">
+        📁 Choose File
+        <input type="file" id="fileInput" accept=".csv" hidden />
+    </label>
+    <span id="fileName" class="file-name">No file selected</span>
+
+    <button id="uploadBtn">🚀 Upload</button>
+
+    <table id="resultTable" style="display: none">
+        <thead>
+        <tr>
+            <th>👩‍💼 Employee ID #1</th>
+            <th>👨‍💼 Employee ID #2</th>
+            <th>📆 Days Worked Together</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
